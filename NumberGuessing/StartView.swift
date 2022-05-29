@@ -14,15 +14,15 @@ struct StartView: View {
     var body: some View {
         VStack {
             Text("to guess...")
-                .font(.title2)
             TextField("number", value: $vm.number, format: .number)
-                .frame(width: 75)
+                .textFieldStyle(.roundedBorder)
             if(vm.correctNumberInput) {
                 NavigationLink(destination: GuessView()) {
-                    Text("guess")
+                    Text("start")
                 }
             }
         }
+        .frame(width: 100,alignment: .leading)
     }
 }
 
