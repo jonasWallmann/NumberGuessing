@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct NumberGuessingApp: App {
+    
+    @StateObject var vm: NumberVM = NumberVM()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                StartView()
+            }
+            .environmentObject(vm)
         }
     }
 }

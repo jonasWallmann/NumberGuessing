@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		757D9AA128440FBD00B288F2 /* NumberGuessingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757D9AA028440FBD00B288F2 /* NumberGuessingApp.swift */; };
-		757D9AA328440FBD00B288F2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757D9AA228440FBD00B288F2 /* ContentView.swift */; };
+		757D9AA328440FBD00B288F2 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757D9AA228440FBD00B288F2 /* StartView.swift */; };
 		757D9AA528440FBE00B288F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 757D9AA428440FBE00B288F2 /* Assets.xcassets */; };
 		757D9AA828440FBE00B288F2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 757D9AA728440FBE00B288F2 /* Preview Assets.xcassets */; };
 		757D9AB228440FBE00B288F2 /* NumberGuessingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757D9AB128440FBE00B288F2 /* NumberGuessingTests.swift */; };
 		757D9ABC28440FBE00B288F2 /* NumberGuessingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757D9ABB28440FBE00B288F2 /* NumberGuessingUITests.swift */; };
 		757D9ABE28440FBE00B288F2 /* NumberGuessingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757D9ABD28440FBE00B288F2 /* NumberGuessingUITestsLaunchTests.swift */; };
+		757D9ACB28440FDB00B288F2 /* NumberVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757D9ACA28440FDB00B288F2 /* NumberVM.swift */; };
+		757D9ACD2844119500B288F2 /* GuessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757D9ACC2844119500B288F2 /* GuessView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		757D9A9D28440FBD00B288F2 /* NumberGuessing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NumberGuessing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		757D9AA028440FBD00B288F2 /* NumberGuessingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberGuessingApp.swift; sourceTree = "<group>"; };
-		757D9AA228440FBD00B288F2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		757D9AA228440FBD00B288F2 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		757D9AA428440FBE00B288F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		757D9AA728440FBE00B288F2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		757D9AAD28440FBE00B288F2 /* NumberGuessingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NumberGuessingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +46,8 @@
 		757D9AB728440FBE00B288F2 /* NumberGuessingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NumberGuessingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		757D9ABB28440FBE00B288F2 /* NumberGuessingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberGuessingUITests.swift; sourceTree = "<group>"; };
 		757D9ABD28440FBE00B288F2 /* NumberGuessingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberGuessingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		757D9ACA28440FDB00B288F2 /* NumberVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberVM.swift; sourceTree = "<group>"; };
+		757D9ACC2844119500B288F2 /* GuessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +99,9 @@
 			isa = PBXGroup;
 			children = (
 				757D9AA028440FBD00B288F2 /* NumberGuessingApp.swift */,
-				757D9AA228440FBD00B288F2 /* ContentView.swift */,
+				757D9AA228440FBD00B288F2 /* StartView.swift */,
+				757D9ACC2844119500B288F2 /* GuessView.swift */,
+				757D9ACA28440FDB00B288F2 /* NumberVM.swift */,
 				757D9AA428440FBE00B288F2 /* Assets.xcassets */,
 				757D9AA628440FBE00B288F2 /* Preview Content */,
 			);
@@ -257,7 +263,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				757D9AA328440FBD00B288F2 /* ContentView.swift in Sources */,
+				757D9ACD2844119500B288F2 /* GuessView.swift in Sources */,
+				757D9ACB28440FDB00B288F2 /* NumberVM.swift in Sources */,
+				757D9AA328440FBD00B288F2 /* StartView.swift in Sources */,
 				757D9AA128440FBD00B288F2 /* NumberGuessingApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
