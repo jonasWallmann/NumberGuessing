@@ -9,12 +9,17 @@ import Foundation
 
 class NumberVM: ObservableObject {
     
-    @Published var number: Int = 0
-    @Published var guess: Int = 50
+    @Published var number: Int = 0 {
+        didSet { reset() }
+    }
     
+    @Published var guess: Int = 50
     @Published var guessList: [Guess] = []
 
     private var range: [Int] = [0, 100]
+    
+    
+    // MARK: computed -----------------------------
     
     var guessed: Bool {
         return number == guess
@@ -24,6 +29,7 @@ class NumberVM: ObservableObject {
         return number > 0 && number < 100
     }
     
+    
     // MARK: inputs -------------------------------------
     
     func hint(smaller: Bool) {
@@ -32,8 +38,7 @@ class NumberVM: ObservableObject {
         self.guessList.append(Guess(number: self.guess, smaller: smaller))
     }
     
-    func reset() {
-        self.number = 0
+    private func reset() {
         self.guess = 50
         self.range = [0, 100]
     }
